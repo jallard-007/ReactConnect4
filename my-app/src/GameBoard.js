@@ -13,17 +13,19 @@ const BOARD_DEFAULT = () => {
     [0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0]
-  ];
+    ]
 };
 
 const GameBoard = () => {
   const [board, setBoard] = useState(BOARD_DEFAULT);
+  console.log(board)
 
   function clearBoard() {
     setBoard(BOARD_DEFAULT);
+    console.log(board)
   }
 
-  function handleClick(columnNum) {
+  function gameLoop(columnNum) {
     if (CheckForWin(board, COMP_ID) || CheckForWin(board, PLAYER_ID)) {
       clearBoard();
       return;
@@ -45,7 +47,7 @@ const GameBoard = () => {
   }
 
   function addToken(board, columnNum, playerID) {
-    let newBoard = [...board];
+    let newBoard = [...board]
     for (let i = newBoard[columnNum].length - 1; i >= 0; i--) {
       if (newBoard[columnNum][i] === 0) {
         newBoard[columnNum][i] = playerID;
@@ -67,7 +69,7 @@ const GameBoard = () => {
 
   const Column = (props) => {
     return (
-      <div className='column' columnNum={props.columnNum} onClick={() => handleClick(props.columnNum)}>
+      <div className='column' onClick={() => gameLoop(props.columnNum)}>
         <Coin value={props.column[0]} />
         <Coin value={props.column[1]} />
         <Coin value={props.column[2]} />
@@ -77,7 +79,6 @@ const GameBoard = () => {
       </div>
     );
   };
-
   return (
     <div id='gameBoard'>
       <Column columnNum='0' column={board[0]} />

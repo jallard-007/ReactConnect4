@@ -12,7 +12,6 @@ function CPU(board) {
     }
   }
   valueOfColumns = AssignRandomValues(valueOfColumns);
-  console.log(valueOfColumns);
   return FindBestColumn(valueOfColumns);
 }
 
