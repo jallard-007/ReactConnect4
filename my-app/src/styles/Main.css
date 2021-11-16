@@ -1,0 +1,30 @@
+* {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+.coin {
+  color: aliceblue;
+  width: 84px;
+  height: 84px;
+  margin: 4px;
+  border: 1px solid rgb(13, 13, 116);
+  border-radius: 50%;
+}
+.coinPlayer {
+  background-color: yellow;
+}
+.coinComp {
+  background-color: red;
+}
+.column:hover {
+  cursor: pointer;
+}
+#gameBoard {
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}

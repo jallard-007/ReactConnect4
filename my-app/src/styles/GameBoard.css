@@ -1,0 +1,8 @@
+#gameBoard {
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  background-color: rgb(65, 65, 189);
+  display: flex;
+  flex-direction: row;
+}
