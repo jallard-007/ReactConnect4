@@ -1,4 +1,4 @@
-import CheckForWin from './CheckForWin';
+import CheckForWin from '../CheckForWin';
 
 function CPU(board) {
   let valueOfColumns = [0, 0, 0, 0, 0, 0, 0];

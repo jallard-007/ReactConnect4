@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Coin = (slot) => {
+function Coin(slot) {
   let defaultClass = 'coin';
   if (slot.value === 1) {
     defaultClass += ' coinPlayer';
@@ -8,6 +8,6 @@ const Coin = (slot) => {
     defaultClass += ' coinComp';
   }
   return <div className={defaultClass}></div>;
-};
+}
 
 export default Coin;

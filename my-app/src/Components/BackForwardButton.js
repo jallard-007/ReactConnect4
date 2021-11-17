@@ -1,8 +1,9 @@
 import React from 'react';
-import { RemoveToken, AddToken } from '../AddOrRemoveToken';
+import AddToken from '../AddToken';
+import RemoveToken from '../RemoveToken';
 import { GetGameMovesNumber, GetRemovedMovesNumber, GetGameMoveGoingBack, GetRemovedMoves } from '../StoreGameMoves';
 
-const BackForButton = (props) => {
+function BackForButton(props) {
   function GoBack(SetBoard) {
     if (GetGameMovesNumber() > 0) {
       console.log('went back');
@@ -28,6 +29,6 @@ const BackForButton = (props) => {
       </button>
     </div>
   );
-};
+}
 
 export default BackForButton;

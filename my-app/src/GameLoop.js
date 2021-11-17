@@ -1,6 +1,6 @@
 import CheckForWin from './CheckForWin';
-import { AddToken } from './AddOrRemoveToken';
-import CPU from './CPU';
+import AddToken from './AddToken';
+import CPU from './ComputerLogic/CPU';
 import { COMP_ID, PLAYER_ID } from './Defaults';
 import { SetGameMove } from './StoreGameMoves';
 
