@@ -1,5 +1,6 @@
 # React-Connect4
 
-React and Bootstrap version of my existing Connect4 project
+React and Bootstrap version of my existing Connect4 project. Purpose of this was to learn React
 
-Currently under development.
+Moved focus to React-Redux version
+
